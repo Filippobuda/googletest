@@ -1,3 +1,3 @@
 #!/bin/bash
 
-g++ ../HelloWorld.cpp -o ../Helloworld
+g++ ../src/HelloWorld.cpp -o ../Helloworld
