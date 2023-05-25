@@ -1,2 +1,1 @@
-#!/bin/bash
-echo "Un saluto dio cane"
+g++ src/Helloworld.cpp -o ../Helloworld
