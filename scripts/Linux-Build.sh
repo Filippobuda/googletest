@@ -1,2 +1,1 @@
-echo "un saluto al du"
-#g++ ../src/HelloWorld.cpp -o ../Helloworld
+g++ ../src/HelloWorld.cpp -o ../Helloworld
