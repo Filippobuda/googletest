@@ -1,1 +1,1 @@
-g++ ../src/HelloWorld.cpp -o ../Helloworld
+g++ ../src/Helloworld.cpp -o ../Helloworld
