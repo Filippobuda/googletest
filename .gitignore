@@ -56,7 +56,6 @@ googlemock/CTestTestfile.cmake
 googlemock/Makefile
 googlemock/cmake_install.cmake
 googlemock/gtest
-/bin
 /googlemock/gmock.dir
 /googlemock/gmock_main.dir
 /googlemock/RUN_TESTS.vcxproj.filters
