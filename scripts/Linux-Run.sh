@@ -1,1 +1,1 @@
-bin/Debug/Helloworld
+./Helloworld
