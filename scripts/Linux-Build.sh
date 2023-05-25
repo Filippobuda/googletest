@@ -1,1 +1,2 @@
-g++ src/Helloworld.cpp -o bin/Debug/Helloworld
+cd bin/Debug
+g++ ../../src/Helloworld.cpp -o Helloworld
