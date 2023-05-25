@@ -1,3 +1,3 @@
-
-
-g++ ../src/HelloWorld.cpp -o ../Helloworld
+#!/bin/bash
+echo "un saluto al du"
+#g++ ../src/HelloWorld.cpp -o ../Helloworld
