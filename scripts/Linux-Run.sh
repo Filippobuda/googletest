@@ -1,1 +1,1 @@
-./Helloworld
+cd build && ./output
