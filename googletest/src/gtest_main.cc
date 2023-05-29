@@ -29,7 +29,7 @@
 
 #include <cstdio>
 
-#include "gtest/gtest.h"
+#include "../googletest/include/gtest/gtest.h"
 
 #if defined(GTEST_OS_ESP8266) || defined(GTEST_OS_ESP32)
 // Arduino-like platforms: program entry points are setup/loop instead of main.
