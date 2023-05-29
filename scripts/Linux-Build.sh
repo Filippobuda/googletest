@@ -1,1 +1,4 @@
-g++ src/Helloworld.cpp -o Helloworld
+mkdir build
+cd build
+cmake .. -DBUILD_GMOCK=OFF
+make
