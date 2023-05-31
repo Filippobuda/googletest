@@ -15,10 +15,10 @@ pwd
 # echo "Sample 3 built"
 # g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample4*.cc -o output4 -lpthread -lgtest
 # echo "Sample 4 built"
-g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1.cc ../../googletest/samples/sample5_unittest.cc -o output5 -lpthread -lgtest
-echo "Sample 5 built"
-# g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample6*.cc -o output6 -lpthread -lgtest
-# echo "Sample 6 built"
+# g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1.cc ../../googletest/samples/sample5_unittest.cc -o output5 -lpthread -lgtest
+# echo "Sample 5 built"
+g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample6*.cc -o output6 -lpthread -lgtest
+echo "Sample 6 built"
 # g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample7*.cc -o output7 -lpthread -lgtest
 # echo "Sample 7 built"
 # g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample8*.cc -o output8 -lpthread -lgtest
