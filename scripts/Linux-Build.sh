@@ -6,7 +6,7 @@ mkdir src/build
 pwd
 cd  src/build
 pwd
-#questi invece sono da dentro googletest/src/build
+#questi invece sono da dentro googletest/src/build provo a farli separati
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1*.cc -o output1 -lpthread -lgtest
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample2*.cc -p output2 -lpthread -lgtest
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample3*.cc -p output3 -lpthread -lgtest
