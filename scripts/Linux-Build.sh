@@ -11,7 +11,7 @@ g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1.cc ../..
 echo "Sample 1 built"
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample2*.cc -o output2 -lpthread -lgtest
 echo "Sample 2 built"
-g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample3*.cc -o output3 -lpthread -lgtest
+g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample3_unittest.cc -o output3 -lpthread -lgtest
 echo "Sample 3 built"
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample4*.cc -o output4 -lpthread -lgtest
 echo "Sample 4 built"
