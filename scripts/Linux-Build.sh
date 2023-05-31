@@ -9,8 +9,8 @@ pwd
 #questi invece sono da dentro googletest/src/build provo a farli separati
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1.cc ../../googletest/samples/sample1_unittest.cc -o output1 -lpthread -lgtest
 echo "Sample 1 built"
-# g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample2*.cc -o output2 -lpthread -lgtest
-# echo "Sample 2 built"
+g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample2*.cc -o output2 -lpthread -lgtest
+echo "Sample 2 built"
 # g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample3_unittest.cc -o output3 -lpthread -lgtest
 # echo "Sample 3 built"
 # g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample4*.cc -o output4 -lpthread -lgtest
