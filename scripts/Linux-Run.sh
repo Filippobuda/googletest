@@ -1,5 +1,5 @@
 #!/bin/bash
-cd build
+cd src/build
 ./output1
 ./output2
 ./output3
