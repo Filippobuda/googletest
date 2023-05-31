@@ -1,4 +1,5 @@
 /build
+/googletest/build
 # Ignore CI build directory
 xcuserdata
 cmake-build-debug/
