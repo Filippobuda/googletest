@@ -24,7 +24,7 @@ pipeline {
 	stage('Push Docker'){
 		steps{
 			withCredentials([string(credentialsId: 'dockerhub_pwd', variable: 'dockerhub_pwd')]) {
-				sh 'docker login -t -u filobuda -p ${dockerhub_pwd}'
+				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
 			sh 'docker push sweng/googletest'
 			
