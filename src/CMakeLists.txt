@@ -21,3 +21,6 @@ add_executable(exec3 ../../googletest/samples/sample10_unittest.cc)
 
 # Link the executable with Google Test
 target_link_libraries(exec GTest::GTest GTest::Main)
+target_link_libraries(exec2 GTest::GTest GTest::Main)
+target_link_libraries(exec3 GTest::GTest GTest::Main)
+
