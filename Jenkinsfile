@@ -32,7 +32,7 @@ pipeline {
 	}
 	stage('Build Docker'){
 		steps{
-			sh 'docker build -t googletest .'
+			sh 'docker build -t filobuda/googletest .'
 		}
 	}
 	stage('Push Docker'){
@@ -40,12 +40,12 @@ pipeline {
 			withCredentials([string(credentialsId: 'dockerhub_pwd', variable: 'dockerhub_pwd')]) {
 				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
-			sh 'docker push googletest'
+			sh 'docker push filobuda/googletest'
 		}
 	}
 	stage('Run Docker image'){
 		steps{
-			sh 'docker run googletest'
+			sh 'docker run filobuda/googletest'
 		}
 	}
 }
