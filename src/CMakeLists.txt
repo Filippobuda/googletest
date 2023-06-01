@@ -9,9 +9,9 @@ include_directories(${GTEST_INCLUDE_DIRS})
 add_executable(exec main.cpp 
 ../../googletest/samples/sample1.cc ../../googletest/samples/sample1_unittest.cc 
 ../../googletest/samples/sample2.cc ../../googletest/samples/sample2_unittest.cc 
-../../googletest/samples/sample3.cc ../../googletest/samples/sample3_unittest.cc 
+../../googletest/samples/sample3_unittest.cc 
 ../../googletest/samples/sample4.cc ../../googletest/samples/sample4_unittest.cc 
-../../googletest/samples/sample5_unittest.cc ../../googletest/samples/sample5_unittest.cc 
+../../googletest/samples/sample5_unittest.cc  
 ../../googletest/samples/sample6_unittest.cc 
 ../../googletest/samples/sample7_unittest.cc 
 ../../googletest/samples/sample8_unittest.cc)
