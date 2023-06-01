@@ -41,7 +41,8 @@ pipeline {
 				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
 			sh 'docker push filobuda/googletest'
-			
+			sh 'docker start googletest'
+			sh 'docker exec -it googletest'
 		}
 	}
 }
