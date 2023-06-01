@@ -18,7 +18,7 @@ pipeline {
 	}
 	stage('Build Docker'){
 		steps{
-			sh 'docker build -t sweng/googletest .'
+			sh 'docker build -t filobuda/googletest .'
 		}
 	}
 	stage('Push Docker'){
@@ -26,7 +26,7 @@ pipeline {
 			withCredentials([string(credentialsId: 'dockerhub_pwd', variable: 'dockerhub_pwd')]) {
 				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
-			sh 'docker push sweng/googletest'
+			sh 'docker push filobuda/googletest'
 			
 		}
 	}
