@@ -19,7 +19,6 @@ pipeline {
 	stage('Docker'){
 		steps{
 			sh 'docker build -t sweng/googletest .'
-			echo $Somebodyonce00
 		}
 	}
 }
