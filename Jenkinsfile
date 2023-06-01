@@ -32,7 +32,9 @@ pipeline {
 	}
 	stage('Build Docker'){
 		steps{
-			sh 'docker build -t filobuda/googletest .'
+			script{
+				sh 'docker build -t filobuda/googletest .'
+			}
 		}
 	}
 	stage('Push Docker'){
