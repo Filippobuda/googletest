@@ -1,5 +1,4 @@
-!/bin/bash
-
+!#/bin/bash
 #questi path sono da googletest la directory root
 pwd
 mkdir src/build
@@ -23,7 +22,7 @@ g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample7*.cc -o o
 echo "Sample 7 built"
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample8*.cc -o output8 -lpthread -lgtest
 echo "Sample 8 built"
-g++ ../../googletest/samples/sample9_unittest.cc -o output2 -lpthread -lgtest
+g++ ../../googletest/samples/sample9_unittest.cc -o output9 -lpthread -lgtest
 echo "Sample 9 built"
-g++ ../../googletest/samples/sample10_unittest.cc -o output3 -lpthread -lgtest
+g++ ../../googletest/samples/sample10_unittest.cc -o output10 -lpthread -lgtest
 echo "Sample 10 built"
