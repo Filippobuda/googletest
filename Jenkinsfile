@@ -18,7 +18,7 @@ pipeline {
 	}
 	stage('Docker'){
 		steps{
-			sh 'docker build -t Filobuda/googletest .'
+			sh 'docker build -t sweng/googletest .'
 		}
 	}
 }
