@@ -1,12 +1,12 @@
 !/bin/bash
 
-questi path sono da googletest la directory root
+#questi path sono da googletest la directory root
 pwd
 mkdir src/build
 pwd
 cd  src/build
 pwd
-questi invece sono da dentro googletest/src/build provo a farli separati
+#questi invece sono da dentro googletest/src/build provo a farli separati
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample1.cc ../../googletest/samples/sample1_unittest.cc -o output1 -lpthread -lgtest
 echo "Sample 1 built"
 g++ ../../googletest/src/gtest_main.cc ../../googletest/samples/sample2*.cc -o output2 -lpthread -lgtest
