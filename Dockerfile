@@ -4,3 +4,4 @@ EXPOSE 8080
 ADD * googletest/
 CMD ["cd", "src/build"]
 CMD ["ls"]
+CMD ["cd", "googletest"]
