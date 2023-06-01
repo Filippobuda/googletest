@@ -1,4 +1,5 @@
 /build
+/scripts/build
 /googletest/build
 # Ignore CI build directory
 xcuserdata
