@@ -16,5 +16,10 @@ pipeline {
 			sh 'scripts/Linux-Run.sh'
 		}
 	}
+	stage('Docker'){
+		steps{
+			sh 'docker build -t Filobuda/googletest .'
+		}
+	}
 }
 }
