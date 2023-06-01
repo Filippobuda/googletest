@@ -18,7 +18,7 @@ pipeline {
 	}
 	stage('Docker'){
 		steps{
-			sh 'docker build -t sweng/googletest .'
+			sh 'sudo docker build -t sweng/googletest .'
 		}
 	}
 }
