@@ -7,7 +7,7 @@
 #include <gtest/gtest.h>
 
 
-// Function to read matrix from files
+// Function to read matrix from file
 std::vector<std::vector<float>> readMatrixFromFile(const std::string& filename) {
     std::ifstream file(filename);
     std::vector<std::vector<float>> matrix;
