@@ -16,9 +16,18 @@ pipeline {
 			sh 'scripts/Linux-Run.sh'
 		}
 	}
-	stage('Docker'){
+	stage('Build Docker'){
 		steps{
 			sh 'docker build -t sweng/googletest .'
+		}
+	}
+	stage('Push Docker'){
+		steps{
+			withCredentials([string(credentialsId: 'dockerhub_pwd', variable: 'dockerhub_pwd')]) {
+				sh 'docker login -t -u filobuda -p ${dockerhub_pwd}'
+			}
+			sh 'docker push sweng/googletest'
+			
 		}
 	}
 }
