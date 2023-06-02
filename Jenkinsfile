@@ -33,7 +33,7 @@ pipeline {
 	stage('Build Docker'){
 		steps{
 			script{
-				sh 'docker build -t filobuda/googletest .'
+				sh 'docker build -t filobuda/googletest:SWENG .'
 			}
 		}
 	}
@@ -47,7 +47,7 @@ pipeline {
 	}
 	stage('Run Docker image'){
 		steps{
-			sh 'docker run filobuda/googletest'
+			sh 'docker run -dp 8080:8080 filobuda/googletest'
 		}
 	}
 }
