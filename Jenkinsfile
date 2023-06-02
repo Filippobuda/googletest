@@ -14,6 +14,7 @@ pipeline {
 			script{
 			sh 'echo "Running 1-8..."'
 			sh 'cd src/build'
+			sh 'ls'
 			sh './exec'
 			}
 		}
