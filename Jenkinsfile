@@ -11,31 +11,38 @@ pipeline {
 	}
 	stage('Test 1-8'){
 		steps{
-			sh 'echo "Running 1-7..."'
+			script{
+			sh 'echo "Running 1-8..."'
 			sh 'cd src/build'
 			sh './exec'
+			}
 		}
 	}
 	stage('Test 9'){
 		steps{
+			script{
 			sh 'echo "Running 9..."'
 			sh 'cd src/build'
 			sh './exec2'
-
+			}
 		}
 	}
 	stage('Test 10'){
 		steps{
+			script{
 			sh 'echo "Running 10..."'
 			sh 'cd src/build'
 			sh './exec3'
+			}
 		}
 	}
 	stage('Run main'){
 		steps{
+			script{
 			sh 'echo "Running main...'
 			sh 'cd src/build'
-			sh './main'		
+			sh './main'	
+			}	
 		}
 	}
 	stage('Build Docker'){
