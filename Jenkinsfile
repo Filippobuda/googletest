@@ -11,39 +11,27 @@ pipeline {
 	}
 	stage('Test 1-8'){
 		steps{
-			script{
 			sh 'echo "Running 1-8..."'
-			sh 'cd src/build'
-			sh 'ls'
-			sh './exec'
-			}
+			sh 'Linux-Run1.sh'
 		}
 	}
 	stage('Test 9'){
 		steps{
-			script{
 			sh 'echo "Running 9..."'
-			sh 'cd src/build'
-			sh './exec2'
-			}
+			sh 'Linux-Run2.sh'
+
 		}
 	}
 	stage('Test 10'){
 		steps{
-			script{
 			sh 'echo "Running 10..."'
-			sh 'cd src/build'
-			sh './exec3'
-			}
+			sh 'Linux-Run3.sh'
 		}
 	}
 	stage('Run main'){
 		steps{
-			script{
 			sh 'echo "Running main...'
-			sh 'cd src/build'
-			sh './main'	
-			}	
+			sh 'Linux-RunMain.sh'		
 		}
 	}
 	stage('Build Docker'){
