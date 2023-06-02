@@ -48,7 +48,18 @@ class Matrix {
             return  data.at(0).size();
         }
         int get(int i, int j) { return data.at(i).at(j);}
+        std::vector<int> getRow(int i) { return data.at(i);}
 };
+
+
+TEST(MatrixTest, IsMatrixFull) {
+    Matrix matrix(matrixFileName);
+    for (int i = 0; i < matrix.getRows(); i++) {
+        for(int j = 0; j < matrix.getCols() && j != i; j++){
+            ASSERT_EQ(matrix.getRow(i).size(), matrix.getRow(j).size());
+        }
+    }
+}
 
 TEST(MatrixTest, IsMatrixPrime) {
     Matrix matrix(matrixFileName);
