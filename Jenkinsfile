@@ -18,7 +18,7 @@ pipeline {
 	}
 	stage('Test 9'){
 		steps{
-			sh 'echo "Running 9..."'ù
+			sh 'echo "Running 9..."'
 			sh 'cd src/build'
 			sh './exec2'
 
