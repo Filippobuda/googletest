@@ -12,22 +12,26 @@ pipeline {
 	stage('Test 1-8'){
 		steps{
 			sh 'echo "Running 1-7..."'
-			sh 'chmod +x scripts/Linux-Run1.sh'
-			sh 'scripts/Linux-Run1.sh'
+			sh './exec'
 		}
 	}
 	stage('Test 9'){
 		steps{
 			sh 'echo "Running 9..."'
-			sh 'chmod +x scripts/Linux-Run2.sh'
-			sh 'scripts/Linux-Run2.sh'
+			sh './exec2'
+
 		}
 	}
 	stage('Test 10'){
 		steps{
 			sh 'echo "Running 10..."'
-			sh 'chmod +x scripts/Linux-Run3.sh'
-			sh 'scripts/Linux-Run3.sh'
+			sh './exec3'
+		}
+	}
+	stage('Run main'){
+		steps{
+			sh 'echo "Running main...'
+			sh './main'		
 		}
 	}
 	stage('Build Docker'){
@@ -43,12 +47,6 @@ pipeline {
 				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
 			sh 'docker push filobuda/googletest'
-		}
-	}
-	stage('Run Docker image'){
-		steps{
-			sh 'docker pull filobuda/googletest'
-			
 		}
 	}
 }
