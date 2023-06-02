@@ -12,12 +12,14 @@ pipeline {
 	stage('Test 1-8'){
 		steps{
 			sh 'echo "Running 1-7..."'
+			sh 'cd src/build'
 			sh './exec'
 		}
 	}
 	stage('Test 9'){
 		steps{
-			sh 'echo "Running 9..."'
+			sh 'echo "Running 9..."'ù
+			sh 'cd src/build'
 			sh './exec2'
 
 		}
@@ -25,12 +27,14 @@ pipeline {
 	stage('Test 10'){
 		steps{
 			sh 'echo "Running 10..."'
+			sh 'cd src/build'
 			sh './exec3'
 		}
 	}
 	stage('Run main'){
 		steps{
 			sh 'echo "Running main...'
+			sh 'cd src/build'
 			sh './main'		
 		}
 	}
