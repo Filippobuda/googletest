@@ -2,5 +2,6 @@ FROM ubuntu:latest
 EXPOSE 3030
 #workdir mi mette in /bin/bash come cartella di lavoro
 WORKDIR /app
-#qui copio tutto googletest dentro il container
-COPY 
+#qui copio main(eseguibile) e matrix.txt dentro il container 
+COPY src/build/main .
+COPY src/matrix.txt .
