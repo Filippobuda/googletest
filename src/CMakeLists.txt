@@ -25,4 +25,5 @@ add_executable(main main.cpp)
 target_link_libraries(exec GTest::GTest GTest::Main)
 target_link_libraries(exec2 GTest::GTest GTest::Main)
 target_link_libraries(exec3 GTest::GTest GTest::Main)
+target_link_libraries(main GTest::GTest GTest::Main)
 
