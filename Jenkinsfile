@@ -47,6 +47,9 @@ pipeline {
 	}
 	stage('Run Docker image'){
 		steps{
+			echo 'Starting the docker...'
+			sh 'docker start filobuda/googletest:SWENG'
+			echo 'Running the docker...'
 			sh 'docker run -dp 3030:3030 filobuda/googletest:SWENG'
 		}
 	}
