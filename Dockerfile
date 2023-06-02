@@ -1,8 +1,10 @@
 FROM ubuntu:latest
 EXPOSE 3030
-#add copia dalla nostra directory alla directory image gli sto dicendo i mettere
-WORKDIR /bin/bash
+#workdir mi mette in /bin/bash come cartella di lavoro
+WORKDIR /bin/bash/
+#qui copio tutto googletest dentro il container
 COPY . .
+#RUN mi serve a installare cmake (?)
 RUN ["/bin/bash", "sudo apt install cmake ..."]
 CMD ["cd","src"]
 CMD [ "cmake .."]
