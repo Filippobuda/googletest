@@ -11,8 +11,6 @@ std::string matrixFileName;
 
 class Matrix {
     private:
-        int rows;
-        int columns;
         std::vector<std::vector<int>> data;
 
     public:
@@ -27,6 +25,7 @@ class Matrix {
 
                 while (iss >> value) {
                     row.push_back(value);
+                    
                 }
 
                 data.push_back(row);
@@ -43,10 +42,10 @@ class Matrix {
         }
 
         int getRows(){
-            return rows;
+            return data.size();
         }
         int getCols(){
-            return columns;
+            return  data.at(0).size();
         }
         int get(int i, int j) { return data.at(i).at(j);}
 };
