@@ -11,8 +11,6 @@ std::string matrixFileName;
 
 class Matrix {
     private:
-        int rows;
-        int columns;
         std::vector<std::vector<int>> data;
 
     public:
@@ -27,6 +25,7 @@ class Matrix {
 
                 while (iss >> value) {
                     row.push_back(value);
+                    
                 }
 
                 data.push_back(row);
@@ -43,13 +42,24 @@ class Matrix {
         }
 
         int getRows(){
-            return rows;
+            return data.size();
         }
         int getCols(){
-            return columns;
+            return  data.at(0).size();
         }
         int get(int i, int j) { return data.at(i).at(j);}
+        std::vector<int> getRow(int i) { return data.at(i);}
 };
+
+
+TEST(MatrixTest, IsMatrixFull) {
+    Matrix matrix(matrixFileName);
+    for (int i = 0; i < matrix.getRows(); i++) {
+        for(int j = 0; j < matrix.getCols() && j != i; j++){
+            ASSERT_EQ(matrix.getRow(i).size(), matrix.getRow(j).size());
+        }
+    }
+}
 
 TEST(MatrixTest, IsMatrixPrime) {
     Matrix matrix(matrixFileName);
