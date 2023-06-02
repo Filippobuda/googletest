@@ -42,12 +42,12 @@ pipeline {
 			withCredentials([string(credentialsId: 'dockerhub_pwd', variable: 'dockerhub_pwd')]) {
 				sh 'docker login -u filobuda -p ${dockerhub_pwd}'
 			}
-			sh 'docker push SWENG'
+			sh 'docker push filobuda/googletest:SWENG'
 		}
 	}
 	stage('Run Docker image'){
 		steps{
-			sh 'docker run -dp 3030:3030 SWENG'
+			sh 'docker run -dp 3030:3030 filobuda/googletest:SWENG'
 		}
 	}
 }
