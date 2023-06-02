@@ -30,7 +30,7 @@ pipeline {
 	}
 	stage('Run main'){
 		steps{
-			sh 'echo "Running main...'
+			sh 'echo "Running main..."'
 			sh 'scripts/Linux-RunMain.sh'		
 		}
 	}
