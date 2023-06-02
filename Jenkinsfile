@@ -47,7 +47,7 @@ pipeline {
 	}
 	stage('Run Docker image'){
 		steps{
-			sh 'docker run -dp 8080:8080 filobuda/googletest'
+			sh 'docker run -dp 7080:7080 filobuda/googletest'
 		}
 	}
 }
