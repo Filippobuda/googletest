@@ -19,7 +19,7 @@ add_executable(exec  ../../googletest/src/gtest_main.cc
 add_executable(exec2 ../../googletest/samples/sample9_unittest.cc)
 add_executable(exec3 ../../googletest/samples/sample10_unittest.cc)
 
-add_executable(main main.cpp)
+add_executable(main ../main.cpp ../../googletest/samples/sample1.cc)
 
 # Link the executable with Google Test
 target_link_libraries(exec GTest::GTest GTest::Main)
