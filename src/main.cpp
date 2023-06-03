@@ -3,6 +3,7 @@
 #include <vector>
 #include <sstream>
 #include <numeric>
+#include <cstdio>
 #include <gtest/gtest.h>
 #include "../googletest/samples/sample1.h"
 
@@ -71,10 +72,13 @@ TEST(MatrixTest, IsMatrixPrime) {
 }
 
 int main(int argc, char** argv) {
+    FILE* f_out = freopen("output_file.txt", "w", stdout);
     if (argc > 1) {
         matrixFileName = argv[1];
         testing::InitGoogleTest(&argc, argv);
-        return RUN_ALL_TESTS();
+        int result =RUN_ALL_TESTS();
+        fclose(f_out);
+        return result;
     } else {
         std::cerr << "No matrix file provided!" << std::endl;
         return 1;
