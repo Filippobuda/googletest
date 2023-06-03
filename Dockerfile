@@ -1,10 +1,7 @@
 FROM ubuntu:latest
 EXPOSE 3030
 #workdir mi mette in /bin/bash come cartella di lavoro
-WORKDIR /bin/bash/
-#qui copio tutto googletest dentro il container
-COPY . .
-#RUN mi serve a installare cmake (?)
-RUN ["/bin/bash", "sudo apt install cmake ..."]
-CMD ["cd","src"]
-CMD [ "cmake .."]
+WORKDIR /app
+#qui copio main(eseguibile) e matrix.txt dentro il container 
+COPY src/build/main .
+COPY src/matrix.txt .
