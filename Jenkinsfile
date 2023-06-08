@@ -1,3 +1,4 @@
+#Jenkins pipeline
 pipeline {
 	agent any
 	stages{
