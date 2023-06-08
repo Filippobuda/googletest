@@ -37,7 +37,6 @@ int Factorial(int n) {
   for (int i = 1; i <= n; i++) {
     result *= i;
   }
-  result=10000;
   return result;
 }
 
