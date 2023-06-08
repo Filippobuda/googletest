@@ -78,10 +78,8 @@ int main(int argc, char** argv) {
         matrixFileName = argv[1];
         testing::InitGoogleTest(&argc, argv);
         int result =RUN_ALL_TESTS();
-        
         fclose(f_out);
         return result;
-
     } else {
         std::cerr << "No matrix file provided!" << std::endl;
         return 1;
