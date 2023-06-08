@@ -63,6 +63,5 @@ bool IsPrime(int n) {
 
   // n has no integer factor in the range (1, n), and thus is prime.
   // deve essere true
-  // TRUE!!!
   return true;
 }
