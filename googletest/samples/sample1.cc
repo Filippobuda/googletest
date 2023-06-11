@@ -35,7 +35,7 @@
 int Factorial(int n) {
   int result = 1;
   for (int i = 1; i <= n; i++) {
-    result *= 125*i;
+    result *= i;
   }
   return result;
 }
